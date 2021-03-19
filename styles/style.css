@@ -1,0 +1,130 @@
+html {
+    font-family: 'Marck Script', cursive;
+}
+
+body {  
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 720px;
+    margin: 0 auto;
+}
+
+.welcome {}
+
+.title {
+    display: block;
+    font-size: 30px;
+    position: relative;
+    margin: 30px 15px;
+}
+
+.title::after {
+    content: '*по версии журнала Котофорбс который вот-вот должен выйти';
+    font-size: 12px;
+    position: absolute;
+    right: 50px;
+    bottom: -10px;
+}
+
+.title-hint {}
+
+.intro {
+    padding: 0 0 20px 0;
+}
+
+.main-pic {
+    position: absolute;
+    display: block;
+    width: 600px;
+    border-radius: 50%;
+    z-index: 1;
+    margin-top: 150px;
+    margin-left: 80px;
+    border: 2px solid red;
+}
+
+.main-menu {
+    z-index: 10;
+    position: relative;
+    width: 640px;
+    height: 640px;
+    margin-top: 150px;        
+    margin-left: 80px;
+}
+
+.menu-item {
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: blue;
+    left: 240px;
+    top: 240px;
+}
+
+.item-1 {
+    transform: rotate(45deg) translateY(-380px) rotate(-45deg);
+}
+
+.item-2 {
+    transform: rotate(0deg) translateY(-380px) rotate(0deg);
+}
+
+.item-3 {
+    transform: rotate(-45deg) translateY(-380px) rotate(45deg);
+}
+
+.item-4 {
+    transform: rotate(-90deg) translateY(-380px) rotate(90deg);
+}
+
+.item-5 {
+    transform: rotate(-135deg) translateY(-380px) rotate(135deg);
+}
+
+.item-6 {
+    transform: rotate(124.3deg) translateY(-390px) rotate(-124.3deg);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.menu-link {
+    display: block;
+    margin: 5px auto;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color:aqua;
+}
+
+.menu-link:link {}
+
+.menu-link:visited {}
+
+.menu-link:hover {}
+
+.menu-link:active {}
+
+.link-image {
+    display: block;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.description {
+    text-align: center;
+    width: 320px;
+    margin: -20px auto;
+    padding: 0 0 0 150px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
