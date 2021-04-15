@@ -12,7 +12,7 @@ main {
     margin: 0 auto;
 }
 
-.welcome {}
+/* .welcome {} */
 
 .title {
     display: block;
@@ -29,7 +29,7 @@ main {
     bottom: -10px;
 }
 
-.title-hint {}
+/* .title-hint {} */
 
 .intro {
     padding: 0 0 20px 0;
@@ -91,7 +91,7 @@ main {
 }
 
 .hidden {
-    visibility: hidden;
+    display: none;
 }
 
 .menu-link {
@@ -103,13 +103,13 @@ main {
     background-color:aqua;
 }
 
-.menu-link:link {}
+/* .menu-link:link {}
 
 .menu-link:visited {}
 
 .menu-link:hover {}
 
-.menu-link:active {}
+.menu-link:active {} */
 
 .link-image {
     display: block;
