@@ -1,7 +1,7 @@
 let mainPic = document.querySelector('.main-pic');
 let defaultPic = mainPic.src;
 let thumbnails = document.querySelectorAll('.link-image');
-let description = document.querySelector('.description')
+let description = document.querySelector('.description');
 let defaultDescription = description.textContent;
 let userButton = document.querySelector('.user-button');
 let title = document.querySelector('.title');
@@ -20,20 +20,20 @@ for (let i = 0; i < thumbnails.length; i++) {
         if (backButton.classList.contains('hidden') || i===5) {
             description.textContent = thumbnails[i].alt;
         }
-    })
+    });
     thumbnails[i].addEventListener('mouseout', function () {
         if (backButton.classList.contains('hidden')) {    
             mainPic.src = defaultPic;
         }
         description.textContent = defaultDescription;
-    })
+    });
     if (i < 5) {
         thumbnails[i].addEventListener('click', function() {
             if (backButton.classList.contains('hidden')) {
                 pictureChanger(thumbnails[i].dataset.theme);
                 backButton.classList.remove('hidden');
             }
-        })
+        });
     }
 }
 
@@ -44,7 +44,7 @@ backButton.addEventListener('click', function() {
     thumbnails[2].src = 'images/cats1sm.jpg';
     thumbnails[3].src = 'images/creatures1sm.jpg';
     thumbnails[4].src = 'images/owners1sm.jpg';
-})
+});
 
 
 
